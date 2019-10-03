@@ -45,9 +45,9 @@ namespace KiemTraKetThucMon
         public virtual void Talk()
         {
             if (tiengkeu.Equals("Gâu gâu") && (DongvatMauLong.Equals("Trắng")))
-                MessageBox.Show(this.Dongvat + " Tôi là Chó lông màu: " + this.DongvatMauLong);
+                MessageBox.Show(this.tiengkeu + " Tôi là Chó lông màu: " + this.DongvatMauLong);
             else if (tiengkeu.Equals("Meo meo") && (DongvatMauLong.Equals("Đen")))
-                MessageBox.Show(this.Dongvat + " Tôi là Mèo lông màu: " + this.DongvatMauLong);
+                MessageBox.Show(this.tiengkeu + " Tôi là Mèo lông màu: " + this.DongvatMauLong);
         }
     }
 }
