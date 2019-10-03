@@ -29,13 +29,15 @@ namespace KiemTraKetThucMon
         {
             Meo meo = new Meo();
             meo.tiengkeu = "Meo meo";
+            meo.DongvatMauLong = "Đen";
             meo.Talk();
         }
 
         private void Btncho_Click(object sender, RoutedEventArgs e)
         {
             Cho cho = new Cho();
-            cho.tiengkeu = "Gau gau";
+            cho.tiengkeu = "Gâu gâu";
+            cho.DongvatMauLong = "Trắng";
             cho.Talk();
         }
     }

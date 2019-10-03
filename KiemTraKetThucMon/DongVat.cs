@@ -26,18 +26,28 @@ namespace KiemTraKetThucMon
         {
         }
 
-        public string MauLong
+        private string MauLong;
+
+        public string DongvatMauLong
         {
-            get { return MauLong; }
-            set { MauLong = value; }
+            get
+            {
+                return MauLong;
+            }
+            set
+            {
+                MauLong = value;
+            }
         }
+
+        public string Dongvat { get; private set; }
 
         public virtual void Talk()
         {
-            if (tiengkeu.Equals("Gau gau"))
-                MessageBox.Show("Cho keu: " + this.tiengkeu);
-            else if (tiengkeu.Equals("Meo meo"))
-                MessageBox.Show("Meo keu: " + this.tiengkeu);
+            if (tiengkeu.Equals("Gâu gâu") && (DongvatMauLong.Equals("Trắng")))
+                MessageBox.Show(this.Dongvat + " Tôi là chó lông màu: " + this.DongvatMauLong);
+            else if (tiengkeu.Equals("Meo meo") && (DongvatMauLong.Equals("Đen")))
+                MessageBox.Show(this.Dongvat + " Tôi là mèo lông màu: " + this.DongvatMauLong);
         }
     }
 }
