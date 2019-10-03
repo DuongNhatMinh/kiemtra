@@ -24,5 +24,19 @@ namespace KiemTraKetThucMon
         {
             InitializeComponent();
         }
+
+        private void Btnmeo_Click(object sender, RoutedEventArgs e)
+        {
+            Meo meo = new Meo();
+            meo.tiengkeu = "Meo meo";
+            meo.Talk();
+        }
+
+        private void Btncho_Click(object sender, RoutedEventArgs e)
+        {
+            Cho cho = new Cho();
+            cho.tiengkeu = "Gau gau";
+            cho.Talk();
+        }
     }
 }
